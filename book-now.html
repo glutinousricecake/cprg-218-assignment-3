@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Now - Shangri La Beach Resort</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Merriweather&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="top-bar">
+        <a href="index.html"><img src="icon.png" alt="Site Icon" class="site-icon" /></a>
+        <div id="hamburger" class="hamburger">☰</div>
+
+        <nav class="nav-menu" aria-label="Main Navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+  <main>
+    <section class="hero" aria-labelledby="site-title">
+        <img src="hero.jpg" alt="Resort Hero Banner" class="hero-image" />
+      
+        
+        <div class="weather-box">
+          <h3 id="city"></h3>
+          <p><span id="temp"></span>°C</p>
+          <img id="icon" src="" alt="Weather Icon" />
+        </div>
+      
+        <div class="hero-content">
+          <img src="logo.png" alt="Shangri La Logo" class="hero-logo" />
+          <p class="slogan">Your Dream Getaway</p>
+          <a href="book-now.html" class="cta-button">Book Now</a>
+        </div>
+      </section>
+      
+
+    <section class="cta-section" id="reservation-form">
+      <h2>Reservations</h2>
+      <p class="intro">Plan your stay with us. Fill out the form below and we’ll take care of the rest.</p>
+
+      <form class="reservation-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkin">Check-in Date</label>
+            <input type="date" id="checkin" name="checkin" required />
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Guests</label>
+            <input type="number" id="guests" name="guests" min="1" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkout">Check-out Date</label>
+            <input type="date" id="checkout" name="checkout" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+
+        <button type="submit" class="cta-button">Book Now</button>
+      </form>
+
+      <div class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <a href="index.html"><img src="icon.png" alt="Site Icon" class="footer-icon" /></a>
+    </div>
+    <div class="footer-center">
+      <p>&copy; 2025 Shangri La Beach Resort. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="menu.js"></script>
+  <script src="weather.js"></script>
+  <script src="slideshow.js"></script>
+
+ 
+</body>
+</html>
